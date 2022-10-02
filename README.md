@@ -1,2 +1,2 @@
-# laikya
+# Task 2
 guess number
