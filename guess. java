@@ -22,30 +22,30 @@ class GuessingNumberGame
                 System.out.println("Shall we beginn!!!");
                 System.out.println("\t 1.Start the game");
                 System.out.println("\t 2.Quit the game");
-                option=sc.nextInt();
+                option=ob.nextInt();
             }
             System.out.println("welcome to game"+name);
 
             System.out.println("Enter your guessing number:");
             int Random=(int)(Math.random()*100+1);
             
-            int Number =sc.nextInt();
+            int Number =ob.nextInt();
             int count=1;
             while(Number!=Random)
             {
                 count++;
                 if(Number<Random)
-                System.out.println(oops!+N+"is Smaller");
+                System.out.println(N+"is Smaller");
 
                 else
-                System.out.println(oops!+N+ " is Greater \n");
+                System.out.println(N+ " is Greater \n");
                 System.out.println("Try once again");
                 System.out.println("Enter another number");
                 Number=sc.nextInt();
             }
-            if (count==1) System.out.println("*****\nCongratulations!!!");
-            else if(count==2)System.out.println("***\nCongratulations!!!");
-            else if(count==3)System.out.println("*\nCongratulations!!!");
+            if (count==1) System.out.println("*****\nCongratulations!!!  You guessed right at your 1st chance ");
+            else if(count==2)System.out.println("***\nCongratulations!!! You guessed right at your 2nd chance ");
+            else if(count==3)System.out.println("*\nCongratulations!!! You guessed right at your 3rd chance ");
             else System.out.println("\nCongratulations!!!");
         }
     }
